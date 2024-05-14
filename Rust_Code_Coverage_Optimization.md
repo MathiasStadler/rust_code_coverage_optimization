@@ -1,7 +1,7 @@
 # Rust code coverage optimize
 
 > [!NOTE]
-> [PROJECT SETUP FROM HERE] (https://github.com/MathiasStadler/repo_template/blob/main/includes/extract_scripts_from_markdown.md)
+> [PROJECT SETUP FROM HERE](https://github.com/MathiasStadler/repo_template/blob/main/includes/extract_scripts_from_markdown.md)
 
 &nbsp;
 
