@@ -1,5 +1,11 @@
 {
     "cSpell.words": [
-        "tarpulin"
+        "Cinstrument",
+        "grcov",
+        "println",
+        "profraw",
+        "RUSTFLAGS",
+        "tarpulin",
+        "xtask"
     ]
 }

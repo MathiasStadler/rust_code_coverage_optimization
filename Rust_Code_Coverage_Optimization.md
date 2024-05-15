@@ -6,53 +6,111 @@
 &nbsp;
 
 > [!TIP]
-> [How to set json with comment in MS Video Studio Code](https://stackoverflow.com/questions/69379869/how-to-set-json-with-comment-in-vscode)
+> [How to set json with comment in MS Video Studio Code](https://github.com/MathiasStadler/repo_template/blob/main/includes/update_rust_add_crates_to_last_version.md)
 
-## Update rust to latest stable version
+&nbsp;
 
-```bash
-# show running version
-rustup show
+>[!NOTE]
+> [Update rust to latest stable version](https://github.com/MathiasStadler/repo_template/blob/main/includes/update_rust_add_crates_to_last_version.md)
 
-# update to latest version system wide
-rustup update
+## [rust code coverage first example from here](https://medium.com/@gnana.ganesh/robust-rust-how-code-coverage-powers-rust-software-quality-417ef3ac2360)
 
-# switch between stable and nightly
-rustup override set stable
+### generate simple function and test
 
-rustup override set nightly
+[no_run](https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html#attributes)
 
-# clean your project
-cargo clean
-cargo clean --verbose
+```rust,no_run
+#!/usr/bin/env bash
+export EXAMPLE_SCRIPT_FILE="01_first_test.rs"
+export EXAMPLE_SCRIPT_DIR="examples/"
+cat << EoF > ./$EXAMPLE_SCRIPT_DIR/$EXAMPLE_SCRIPT_FILE
+// FROM HERE
+// https://medium.com/@gnana.ganesh/robust-rust-how-code-coverage-powers-rust-software-quality-417ef3ac2360
 
-# build your project
-cargo build
-cargo build --verbose # large output
+
+pub fn is_even(n: u32) -> bool {
+
+    if n % 2 == 0 {
+
+        true
+
+    } else {
+
+        false
+
+    }
+
+}
+
+#[test]
+pub fn test_even() {
+    assert_eq!(is_even(2), true);
+}
+
+pub fn main(){
+    println!("template");
+}
+
+/*
+export FILE_NAME=$EXAMPLE_SCRIPT_FILE
+export FILE_DIR_NAME=$EXAMPLE_SCRIPT_DIR
+echo "build prg => \$(echo \$FILE_NAME | cut -d . -f 1)";
+cargo build --example "\$(echo \$FILE_NAME | cut -d . -f 1)"
+echo "run PRG => \$(echo \$FILE_NAME | cut -d . -f 1)";
+cargo run --example "\$(echo \$FILE_NAME | cut -d . -f 1)"
+echo "";
+echo "run TEST => \$(echo \$FILE_NAME | cut -d . -f 1)"
+cargo test --example "\$(echo \$FILE_NAME | cut -d . -f 1)"
+# cargo test --jobs 4 --example "\$(echo \$FILE_NAME | cut -d . -f 1)"
+echo "ReturnCode => \$?"
+*/
+EoF
 
 ```
 
-
-## Check is tarpaulin already installed
+### run test with code coverage
 
 ```bash
-cargo --list |grep tarpaulin
-echo $?
+RUSTFLAGS="-Cinstrument-coverage" cargo test
 ```
 
-## Install crate tarpulin
+When the program exits, the raw data from these counters is written to a “profraw” file which can be used to create a coverage report.
 
-- If this package is not already installed or you want to update it, then we use the Crates cargo-edit for this
+### install grcov
+
+- follow this tutorial
+
+```bash
+# Install grcov
+
+cargo install grcov
+
+# Run your tests
+
+RUSTFLAGS="-Cinstrument-coverage" cargo test
+
+# Generate a coverage report
+
+grcov . -s . --binary-path ./target/debug/ -t html --ignore tests/  -o ./target/debug/coverage/
+
+# Now you can view the report by opening an HTML file in your browser
+
+open target/debug/coverage/index.html
+
+```
 
 > [!TIP]
-> [Install cargo-edit](https://crates.io/crates/cargo-edit)
-> This tool extends Cargo to allow you to add, remove, and upgrade dependencies
-> by modifying your Cargo.toml file from the command line.
+> [How to do code coverage in Rust](https://blog.rng0.io/how-to-do-code-coverage-in-rust/)
+&nbsp;
+> [!NOTE]
+> [Rust Source-based Code Coverage since 1.60.0](https://blog.rust-lang.org/2022/04/07/Rust-1.60.0.html#source-based-code-coverage)
 
-```bash
-cargo add tarpaulin
-## for update
-# cargo update tarpaulin
-## build the project
-cargo build 
-```
+- install vscode extension Coverage Gutters
+
+- install cargo install cargo-xtask
+
+[xtask](https://github.com/matklad/cargo-xtask/)
+
+- cargo-xtask is way to add free-form automation to a Rust project, a-la make, npm run or bespoke bash scripts
+
+[use xtask](https://betterprogramming.pub/running-rust-tasks-with-xtask-and-xtaskops-a2193e67dc25)
