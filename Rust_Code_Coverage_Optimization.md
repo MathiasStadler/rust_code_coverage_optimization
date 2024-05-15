@@ -114,3 +114,7 @@ open target/debug/coverage/index.html
 - cargo-xtask is way to add free-form automation to a Rust project, a-la make, npm run or bespoke bash scripts
 
 [use xtask](https://betterprogramming.pub/running-rust-tasks-with-xtask-and-xtaskops-a2193e67dc25)
+
+[here continue](https://github.com/matklad/cargo-xtask/blob/master/examples/hello-world/xtask/src/main.rs)
+
+[here continue](https://blog.rng0.io/how-to-do-code-coverage-in-rust/)
