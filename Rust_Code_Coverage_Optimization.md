@@ -101,6 +101,7 @@ open_with_your_browser ./target/debug/coverage/index.html
 > [!TIP]
 > [How open firefox on Ubuntu through the command line (Terminal)](https://askubuntu.com/questions/1423732/how-open-firefox-on-ubuntu-through-the-command-line-terminal)
 
+&nbsp;
 <details>
     <summary>see here</summary>
     ```bash
