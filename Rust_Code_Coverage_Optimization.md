@@ -78,7 +78,7 @@ When the program exits, the raw data from these counters is written to a “prof
 
 ### install grcov
 
-- follow this tutorial
+- follow the tutorial
 
 ```bash
 # Install grcov
@@ -99,6 +99,20 @@ open target/debug/coverage/index.html
 
 ```
 
+>[!TIP]
+>[How open firefox on Ubuntu through the command line (Terminal)](https://askubuntu.com/questions/1423732/how-open-firefox-on-ubuntu-through-the-command-line-terminal)
+
+<details>
+    <summary>[How open firefox on Ubuntu through the command line (Terminal)](https://askubuntu.com/questions/1423732/how-open-firefox-on-ubuntu-through-the-command-line-terminal)</summary>
+    ```bash
+    export DISPLAY=:0
+    //get the path where is bin installed
+    which firefox
+    /usr/bin/firefox <WEB_PAGE>
+    ```
+</details>
+
+&nbsp;
 > [!TIP]
 > [How to do code coverage in Rust](https://blog.rng0.io/how-to-do-code-coverage-in-rust/)
 &nbsp;
