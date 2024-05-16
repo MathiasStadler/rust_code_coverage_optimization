@@ -221,9 +221,11 @@ pub fn main(){
     // https://doc.rust-lang.org/std/env/fn.args.html
     // Returns the arguments that this program was started with (normally passed via the command line).
     let mut _i = 0;
-    for argument in env::args() {
+    // for argument in env::args()
+    for (_i, argument) in env::args().enumerate(){
         println!("Arg {:} => {:}", _i, argument);
-        _i += 1; // i++
+        //#[warn(clippy::explicit_counter_loop)]
+        //_i += 1; // i++
     }
     
 }
@@ -240,8 +242,12 @@ echo "run TEST => \$(echo \$FILE_NAME | cut -d . -f 1)"
 cargo test --example "\$(echo \$FILE_NAME | cut -d . -f 1)"
 # cargo test --jobs 4 --example "\$(echo \$FILE_NAME | cut -d . -f 1)"
 echo "ReturnCode => \$?"
+# clippy
+cargo clippy --example "\$(echo \$FILE_NAME | cut -d . -f 1)" --fix
 */
 EoF
+
+```
 
 ### filename_only
 
