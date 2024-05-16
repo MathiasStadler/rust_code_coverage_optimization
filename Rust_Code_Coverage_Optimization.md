@@ -10,7 +10,7 @@
 
 &nbsp;
 
->[!NOTE]
+> [!NOTE]
 > [Update rust to latest stable version](https://github.com/MathiasStadler/repo_template/blob/main/includes/update_rust_add_crates_to_last_version.md)
 
 ## [rust code coverage first example from here](https://medium.com/@gnana.ganesh/robust-rust-how-code-coverage-powers-rust-software-quality-417ef3ac2360)
@@ -76,7 +76,7 @@ RUSTFLAGS="-Cinstrument-coverage" cargo test
 
 When the program exits, the raw data from these counters is written to a “profraw” file which can be used to create a coverage report.
 
-### install grcov
+### using grcov on command prompt
 
 - follow the tutorial
 
@@ -95,12 +95,13 @@ grcov . -s . --binary-path ./target/debug/ -t html --ignore tests/  -o ./target/
 
 # Now you can view the report by opening an HTML file in your browser
 
-open target/debug/coverage/index.html
+open_with_your_browser ./target/debug/coverage/index.html
 
 ```
 
->[!TIP]
->[How open firefox on Ubuntu through the command line (Terminal)](https://askubuntu.com/questions/1423732/how-open-firefox-on-ubuntu-through-the-command-line-terminal)
+> [!TIP]
+> How open firefox on Ubuntu through the command line (Terminal)
+> [How open firefox on Ubuntu through the command line (Terminal)](https://askubuntu.com/questions/1423732/how-open-firefox-on-ubuntu-through-the-command-line-terminal)
 
 <details>
     <summary>[How open firefox on Ubuntu through the command line (Terminal)](https://askubuntu.com/questions/1423732/how-open-firefox-on-ubuntu-through-the-command-line-terminal)</summary>
