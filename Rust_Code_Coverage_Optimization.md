@@ -104,6 +104,7 @@ open_with_your_browser ./target/debug/coverage/index.html
 &nbsp;
 <details>
     <summary>see here</summary>
+    - in terminal
     ```bash
     export DISPLAY=:0
     # get the path where is firefox installed
