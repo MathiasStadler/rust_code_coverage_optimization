@@ -73,7 +73,7 @@ RUSTFLAGS="-Cinstrument-coverage" cargo test
 
 When the program exits, the raw data from these counters is written to a “profraw” file which can be used to create a coverage report.
 
-### using grcov on command prompt
+### using grcov in command prompt
 
 - follow the tutorial
 
@@ -110,9 +110,11 @@ open_with_your_browser ./target/debug/coverage/index.html
 
 &nbsp;
 
-> [!TIP] > [How to do code coverage in Rust](https://blog.rng0.io/how-to-do-code-coverage-in-rust/)
+> [!TIP]
+> [How to do code coverage in Rust](https://blog.rng0.io/how-to-do-code-coverage-in-rust/)
 &nbsp;
-> [!NOTE] > [Rust Source-based Code Coverage since 1.60.0](https://blog.rust-lang.org/2022/04/07/Rust-1.60.0.html#source-based-code-coverage)
+> [!NOTE]
+> [Rust Source-based Code Coverage since 1.60.0](https://blog.rust-lang.org/2022/04/07/Rust-1.60.0.html#source-based-code-coverage)
 
 - install vscode extension Coverage Gutters
 
