@@ -249,6 +249,18 @@ EoF
 
 ```
 
+### output
+
+```bash
+cargo run  --example 97_cmd_program_args argument1 argument2
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
+     Running `target/debug/examples/97_cmd_program_args argument1 argument2`
+Arg 0 => target/debug/examples/97_cmd_program_args
+Arg 1 => argument1
+Arg 2 => argument2
+
+```
+
 ### filename_only
 
 ```rust,no_run
