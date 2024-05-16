@@ -103,11 +103,12 @@ open_with_your_browser ./target/debug/coverage/index.html
 > How open firefox on Ubuntu through the command line (Terminal)
 
 <details>
-    <summary>[How open firefox on Ubuntu through the command line (Terminal)](https://askubuntu.com/questions/1423732/how-open-firefox-on-ubuntu-through-the-command-line-terminal)</summary>
-    [How open firefox on Ubuntu through the command line (Terminal)](https://askubuntu.com/questions/1423732/how-open-firefox-on-ubuntu-through-the-command-line-terminal)
+    <summary>How open firefox on Ubuntu through the command line from Terminal</summary>
+    - [How open firefox on Ubuntu through the command line (Terminal)](https://askubuntu.com/questions/1423732/how-open-firefox-on-ubuntu-through-the-command-line-terminal)
+    - from bash shell
     ```bash
     export DISPLAY=:0
-    //get the path where is bin installed
+    # get the path where is firefox installed
     which firefox
     /usr/bin/firefox <WEB_PAGE>
     ```
