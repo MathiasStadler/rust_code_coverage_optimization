@@ -118,3 +118,6 @@ open target/debug/coverage/index.html
 [here continue](https://github.com/matklad/cargo-xtask/blob/master/examples/hello-world/xtask/src/main.rs)
 
 [here continue](https://blog.rng0.io/how-to-do-code-coverage-in-rust/)
+
+
+https://blog.rng0.io/how-to-do-code-coverage-in-rust/#our-goals
