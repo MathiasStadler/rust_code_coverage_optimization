@@ -1,17 +1,14 @@
 # Rust code coverage optimize
 
-> [!NOTE]
-> [Project Setup From Here](https://github.com/MathiasStadler/repo_template/blob/main/includes/extract_scripts_from_markdown.md)
+> [!NOTE] > [Project Setup From Here](https://github.com/MathiasStadler/repo_template/blob/main/includes/extract_scripts_from_markdown.md)
 
 &nbsp;
 
-> [!TIP]
-> [How to set json with comment in MS Video Studio Code](https://github.com/MathiasStadler/repo_template/blob/main/includes/update_rust_add_crates_to_last_version.md)
+> [!TIP] > [How to set json with comment in MS Video Studio Code](https://github.com/MathiasStadler/repo_template/blob/main/includes/update_rust_add_crates_to_last_version.md)
 
 &nbsp;
 
-> [!NOTE]
-> [Update rust to latest stable version](https://github.com/MathiasStadler/repo_template/blob/main/includes/update_rust_add_crates_to_last_version.md)
+> [!NOTE] > [Update rust to latest stable version](https://github.com/MathiasStadler/repo_template/blob/main/includes/update_rust_add_crates_to_last_version.md)
 
 ## [rust code coverage first example from here](https://medium.com/@gnana.ganesh/robust-rust-how-code-coverage-powers-rust-software-quality-417ef3ac2360)
 
@@ -99,14 +96,10 @@ open_with_your_browser ./target/debug/coverage/index.html
 
 ```
 
-> [!TIP]
-> How open firefox on Ubuntu through the command line (Terminal)
+> [!TIP] > [How open firefox on Ubuntu through the command line (Terminal)](https://askubuntu.com/questions/1423732/how-open-firefox-on-ubuntu-through-the-command-line-terminal)
 
 <details>
-    <summary>([How open firefox on Ubuntu through the command line (Terminal)](https://askubuntu.com/questions/1423732/how-open-firefox-on-ubuntu-through-the-command-line-terminal))</summary>
-    - empty
-    - [How open firefox on Ubuntu through the command line (Terminal)](https://askubuntu.com/questions/1423732/how-open-firefox-on-ubuntu-through-the-command-line-terminal)
-    - from bash shell
+    <summary>see here</summary>
     ```bash
     export DISPLAY=:0
     # get the path where is firefox installed
@@ -116,11 +109,10 @@ open_with_your_browser ./target/debug/coverage/index.html
 </details>
 
 &nbsp;
-> [!TIP]
-> [How to do code coverage in Rust](https://blog.rng0.io/how-to-do-code-coverage-in-rust/)
+
+> [!TIP] > [How to do code coverage in Rust](https://blog.rng0.io/how-to-do-code-coverage-in-rust/)
 &nbsp;
-> [!NOTE]
-> [Rust Source-based Code Coverage since 1.60.0](https://blog.rust-lang.org/2022/04/07/Rust-1.60.0.html#source-based-code-coverage)
+> [!NOTE] > [Rust Source-based Code Coverage since 1.60.0](https://blog.rust-lang.org/2022/04/07/Rust-1.60.0.html#source-based-code-coverage)
 
 - install vscode extension Coverage Gutters
 
@@ -135,6 +127,5 @@ open_with_your_browser ./target/debug/coverage/index.html
 [here continue](https://github.com/matklad/cargo-xtask/blob/master/examples/hello-world/xtask/src/main.rs)
 
 [here continue](https://blog.rng0.io/how-to-do-code-coverage-in-rust/)
-
 
 https://blog.rng0.io/how-to-do-code-coverage-in-rust/#our-goals
