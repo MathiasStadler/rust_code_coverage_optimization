@@ -109,7 +109,6 @@ open_with_your_browser ./target/debug/coverage/index.html
 </details>
 
 &nbsp;
-
 > [!TIP]
 > [How to do code coverage in Rust](https://blog.rng0.io/how-to-do-code-coverage-in-rust/)
 &nbsp;
