@@ -211,7 +211,7 @@ export EXAMPLE_SCRIPT_DIR="examples/"
 cat << EoF > ./$EXAMPLE_SCRIPT_DIR/$EXAMPLE_SCRIPT_FILE
 //FROM HERE
 //https://doc.rust-lang.org/std/env/fn.args.html
-use std::path::Path;
+use std::env;
 
 pub fn main(){
 
